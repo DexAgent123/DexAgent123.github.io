@@ -9,8 +9,9 @@ h1.title.publication-title {
   line-height: 1.2;
 }
 
-/* widen the title block so the title sets in two lines at the template's
-   2.6rem rather than three */
+/* widen the title block a little. The title is long enough to set in three
+   lines at the template's 2.6rem, and this keeps those three lines balanced
+   rather than letting them run short at the default 960px */
 .hero .container.is-max-desktop {
   max-width: 1100px;
 }
@@ -68,7 +69,8 @@ h1.title.publication-title {
   filter: brightness(97%);
 }
 
-/* below the widened container, scale the title so it still sets in two lines */
+/* below the widened container, scale the title down so it does not gain a
+   fourth line */
 @media screen and (max-width: 1150px) {
   h1.title.publication-title {
     font-size: 2.25rem;
