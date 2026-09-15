@@ -9,6 +9,12 @@ h1.title.publication-title {
   line-height: 1.2;
 }
 
+/* widen the title block so the title sets in two lines at the template's
+   2.6rem rather than three */
+.hero .container.is-max-desktop {
+  max-width: 1100px;
+}
+
 .publication-authors {
   font-family: 'Google Sans', 'Noto Sans', sans-serif;
 }
@@ -60,6 +66,13 @@ h1.title.publication-title {
 .button:hover {
   background-color: #f2f2f2;
   filter: brightness(97%);
+}
+
+/* below the widened container, scale the title so it still sets in two lines */
+@media screen and (max-width: 1150px) {
+  h1.title.publication-title {
+    font-size: 2.25rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
