@@ -1,3 +1,7 @@
-*.mp4
 *.mov
 .DS_Store
+# stray videos stay out, but everything the site publishes under static/videos
+# is committed, at any depth
+*.mp4
+!/static/videos/*.mp4
+!/static/videos/**/*.mp4
